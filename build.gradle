@@ -17,7 +17,7 @@ targetCompatibility = '1.7'
 
 ext {
   springVersion = '3.2.4.RELEASE'
-  scalaVersion = '2.11.2'
+  scalaVersion = '2.11.8'
   scalaLibVersion = '2.11'
 }
 
