@@ -1,3 +1,12 @@
+buildscript {
+    repositories {
+        maven { url 'http://repo.springsource.org/plugins-release' }
+    }
+    dependencies {
+        classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.7'
+    }
+}
+
 apply plugin: 'java'
 apply plugin: 'scala'
 apply plugin: 'idea'
@@ -72,13 +81,4 @@ tasks.withType(ScalaCompile) {
 task wrapper(type: Wrapper) {
   description = 'Generates gradlew[.bat] scripts'
   gradleVersion = '4.5.1'
-}
-
-buildscript {
-    repositories {
-        maven { url 'http://repo.springsource.org/plugins-release' }
-    }
-    dependencies {
-        classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.7'
-    }
 }
